@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+    margin-bottom: 1000px;
+}
+h1 , h2 , h3 , h4{
+    font-family: 'Volkhov', serif;
+}
+.section{
+    padding: 40px;
+}
+header{
+    position: absolute;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    z-index: 9;
+}
+.header__left a{
+    color: #fb811e;
+    font-size: 30px;
+    position: relative;
+    font-family:'Volkhov', serif;
+}
+.header__left i{
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    font-size: 20px;
+}
+.header__right i{
+    font-size: 24px;
+}
+
+.navbar{
+    background-color: rgb(255, 179, 179);
+}
+/* ============= CAROUSEL ============= */
+.postcarousel{
+    overflow: hidden;
+    display: flex;
+}
+.postcarousel__left{
+    width: auto;
+    position: relative;
+    margin-left: 175px;
+    margin-top: 29px;
+}
+.postcarousel__right{
+    width: 80%;
+}
+.postcarousel__left h1{
+    font-size: 120px;
+    color: #f4f4f4;
+    position: absolute;
+    font-weight: 700;
+    z-index: -1;
+    top: -86px;
+    left: -60px;
+}
+.postcarousel .postcarousel__left h3{
+    font-size: 50px;
+    color: black;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.postcarousel__left p{
+    color: #707070;
+    font-size: 20px;
+    line-height: 1.35;
+    margin-bottom: 15px;
+}
+
+.postcarousel__left button{
+    font-size: 16px;
+    line-height: 26px;
+    margin-top: 33px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 1px transparent;
+    background-color: #fb811e;
+    color: white;
+}
+.carousel-item img{
+    height: 100vh;
+    display: inline-block;
+    object-fit: top left;
+    border-radius: 0 0 0 20px;
+} 
+/* .bg__carousel1{
+    background-image: url(../imgs/b1.jpg);
+    background-position: top center;
+    height: 100vh;
+
+} */
