@@ -11,7 +11,15 @@ body {
 }
 h1 , h2 , h3 , h4 , h5 , h6{
     font-family: 'Volkhov', serif;
+    margin-bottom: 0px;
 }
+h3{
+    color: #060606;
+}
+p{
+    color: #707070;
+}
+
 button{
     font-size: 16px;
     line-height: 26px;
@@ -103,7 +111,6 @@ header{
     margin-bottom: 24px;
 }
 .postcarousel__left p{
-    color: #707070;
     font-size: 20px;
     line-height: 1.35;
     margin-bottom: 15px;
@@ -142,6 +149,7 @@ header{
 }
 .carousel-item p{
     font-size: 17px;
+    color: #fff;
 }
 .carousel__text{
     position: absolute;
@@ -203,12 +211,13 @@ header{
 }
 .services__title h5{
     font-size: 22px;
-    margin-bottom: 9px;
+    line-height: 28px;
 }
 .services__title h3{
     font-size: 40px;
     font-weight: 600;
     line-height: 50px;
+    color: #fff;
 }
 .services__title p{
     font-size: 1.25rem;
@@ -216,6 +225,7 @@ header{
     line-height: 1.35;
     margin-top: -5px;
     margin-left: 15px;
+    color: #fff;
 }
 .services__title .title1 , .services__title .title2{
     width: 50%;
@@ -259,7 +269,120 @@ header{
 }
 .services__text p{
     font-size: 17px;
-    color: #707070;
     margin-top: 12px;
     line-height: 1.6;
+}
+/* ======= season season season ======= */
+.season__left{
+    margin-top: 17px;
+}
+.title__top h5{
+    font-size: 22px;
+    line-height: 28px;
+    color: #fb811e;
+}
+.title__top h3{
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
+}
+.title__top p{
+    font-size: 17px;
+    line-height: 27px;
+}
+.title__bot span{
+    font-size: 30px;
+    color: #fb811e;
+}
+.title__bot h4{
+    font-size: 24px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.title__bot p{
+    font-size: 17px;
+    line-height: 27px;
+}
+.season__right{
+    padding-left: 114px;
+    position: relative;
+}
+.season__right img{
+    border-radius: 30px;
+}
+.season__right .text{
+    padding: 40px;
+    position: absolute;
+    bottom: 40px;
+    left: 14px;
+    background-color: #fb811e;
+    color: #fff;
+    text-align: center;
+    border-radius: 0 0 100px 0;
+    min-width: 300px;
+    box-shadow: 30px 30px 30px rgb(0 0 0 / 20%);
+}
+.season__right h6{
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 80px;
+}
+.season__right p{
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0.2px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    color: #fff;
+}
+/* ======= BLOG BLOG BLOG ======= */
+.blog__item{
+    margin-top: 30px;
+}
+.blog__bg{
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 2rem 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+.blog__bg:hover{
+    border: 1px solid #eee;
+}
+.blog__text h4{
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 25px;
+    transition: all 0.3s ease-in-out;
+}
+.blog__bg:hover h4{
+    color: #009f4d;
+}
+.blog__text p{
+    font-size: 17px;
+    line-height: 27px;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
+/* ====== GALLERY GALLERY GALLERY ====== */
+.gallery__item{
+    position: relative;
+}
+.gallery__item img{
+    width: 100%;
+}
+.gallery__item h5{
+    position: absolute;
+    color: white;
+    background: rgb(255 255 255 / 27%);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 20px;
+    font-size: 1.25rem;
+    line-height: 28px;
+    font-weight: bold;
+    padding: 6px;
+    text-align: center;
 }
