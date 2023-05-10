@@ -60,6 +60,8 @@ header{
     left: 0px;
     width: 100%;
     z-index: 9;
+    padding: 1rem 0;
+    transition: all 0.5s;
 }
 .header__left:hover a{
     color: black;
@@ -81,8 +83,21 @@ header{
     font-size: 20px;
 }
 
-.navbar{
-    background-color: rgb(255, 179, 179);
+.header__right button{
+    background-color: transparent;
+}
+.sticky{
+    padding: 0.5rem 0;
+    background-color: white;
+}
+.sticky .header__left a{
+    color: #060606;
+}
+.sticky button{
+    color: #060606;
+}
+.sticky .header__right button {
+    color: #060606;
 }
 /* ============= CAROUSEL ============= */
 .postcarousel{
@@ -156,6 +171,16 @@ header{
     bottom: 14px;
     right: -134px;
     line-height: 0.5;
+}
+.carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 1;
+}
+.carousel-indicators li.active{
+    background-color: #fb811e;
 }
 /* ========GROW GROW GROW======== */
 .grow__left{
@@ -368,6 +393,27 @@ header{
 /* ====== GALLERY GALLERY GALLERY ====== */
 .gallery__item{
     position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+.gallery__item::before {
+    content: "";
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    display: block;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.3) 100%
+    );
+    transform: skewX(-25deg);
+  }
+.gallery__item:hover::before {
+    left: 125%;
+    transition: all 0.75s;
 }
 .gallery__item img{
     width: 100%;
