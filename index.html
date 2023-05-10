@@ -20,6 +20,8 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+  <!-- FANCY BOX -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
   <!-- MY CSS -->
   <link rel="stylesheet" href="./css/styles.css">
 </head>
@@ -27,17 +29,17 @@
 <body>
   <!-- NAVBAR -->
 
-  <header class="bg-white">
-    <div class="header__content container d-flex justify-content-between my-3">
+  <header>
+    <div class="header__content container d-flex justify-content-between">
 
       <div class="header__left">
         <a class="navbar-brand" href="#"><i class="fa fa-leaf" aria-hidden="true"></i>Farmstead</a>
       </div>
       <div class="header__right d-flex align-items-center">
-        <i class="bi bi-brightness-high"></i>
-        <i class="bi bi-moon"></i>
+        <button><i class="bi bi-brightness-high"></i></button>
+        <button><i class="bi bi-moon"></i></button>
         <nav class="navbar navbar-collapse-lg justify-content-between">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header__navbar"
+          <button id="button_nohover" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#header__navbar"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="fa fa-bars"></span>
           </button>
@@ -359,31 +361,31 @@
           <button class="mt-4">discover more</button>
         </div>
         <div class="gallery__item col-3 px-0">
-          <img class="img-fluid" src="./imgs/g2.jpg" alt="g2.jpg">
+          <img  class="lightimg" data-thumb="./imgs/g2.jpg" data-fancybox="gallery" class="img-fluid" src="./imgs/g2.jpg" alt="g2.jpg">
           <h5>Fresh Carrots</h5>
         </div>
         <div class="gallery__item col-3 px-0">
-          <img class="img-fluid" src="./imgs/g3.jpg" alt="g3.jpg">
+          <img class="lightimg" data-thumb="./imgs/g3.jpg" data-fancybox="gallery" class="img-fluid" src="./imgs/g3.jpg" alt="g3.jpg">
           <h5>Strawberry</h5>
         </div>
         <div class="gallery__item col-3 px-0">
-          <img class="img-fluid" src="./imgs/g11.jpg" alt="g11.jpg">
+          <img class="lightimg" data-thumb="./imgs/g11.jpg" data-fancybox="gallery" class="img-fluid" src="./imgs/g11.jpg" alt="g11.jpg">
           <h5>Our Farm</h5>
         </div>
         <div class="gallery__item col-3 px-0">
-          <img class="img-fluid" src="./imgs/g12.jpg" alt="g12.jpg">
+          <img class="lightimg" data-thumb="./imgs/g12.jpg" data-fancybox="gallery" class="img-fluid" src="./imgs/g12.jpg" alt="g12.jpg">
           <h5>Fresh Apples</h5>
         </div>
         <div class="gallery__item col-3 px-0">
-          <img class="img-fluid" src="./imgs/g13.jpg" alt="g13.jpg">
+          <img class="lightimg" data-thumb="./imgs/g13.jpg" data-fancybox="gallery" class="img-fluid" src="./imgs/g13.jpg" alt="g13.jpg">
           <h5>Awesome Fields</h5>
         </div>
         <div class="gallery__item col-3 px-0">
-          <img class="img-fluid" src="./imgs/g14.jpg" alt="g14.jpg">
+          <img class="lightimg" data-thumb="./imgs/g14.jpg" data-fancybox="gallery" class="img-fluid" src="./imgs/g14.jpg" alt="g14.jpg">
           <h5>Fresh Grapes</h5>
         </div>
         <div class="gallery__item col-3 px-0">
-          <img class="img-fluid" src="./imgs/g15.jpg" alt="g15.jpg">
+          <img class="lightimg" data-thumb="./imgs/g15.jpg" data-fancybox="gallery" class="img-fluid" src="./imgs/g15.jpg" alt="g15.jpg">
           <h5>Hot Papper</h5>
         </div>
       </div>
@@ -399,11 +401,15 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
     integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
     crossorigin="anonymous"></script>
+  <script src="./js/sticky.js"></script>
   <script>
     $('.carousel').carousel({
       interval: 500000
     })
   </script>
+  <!-- fancybox -->
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  
 </body>
 
 </html>
