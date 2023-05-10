@@ -87,7 +87,7 @@ header{
     background-color: transparent;
 }
 .sticky{
-    padding: 0.5rem 0;
+    padding: 6px 0;
     background-color: white;
 }
 .sticky .header__left a{
@@ -145,24 +145,24 @@ header{
     width: 100%;
     height: 100vh;
 }
-.carousel-item img{
+.carousel__post img{
     height: 100vh;
     width: 100%;
     display: inline-block;
     object-fit: top left;
     border-radius: 0 0 0 20px;
 }
-.carousel-item{
+.carousel__post{
     text-align: right;
 }
-.carousel-item h4{
+.carousel__post h4{
     font-size: 24px;
     font-family: 'Volkhov', serif;
 }
-.carousel-item span{
+.carousel__post span{
     font-family: 'Source Sans Pro', sans-serif;
 }
-.carousel-item p{
+.carousel__post p{
     font-size: 17px;
     color: #fff;
 }
@@ -368,7 +368,7 @@ header{
 .blog__bg{
     border: 1px solid transparent;
     border-radius: 10px;
-    padding: 2rem 2rem;
+    padding: 2rem 31.04px;
     cursor: pointer;
     transition: all 0.3s ease-in;
 }
@@ -391,6 +391,9 @@ header{
     margin-bottom: 0;
 }
 /* ====== GALLERY GALLERY GALLERY ====== */
+.gallery .container{
+    padding: 15px;
+}
 .gallery__item{
     position: relative;
     cursor: pointer;
@@ -431,4 +434,69 @@ header{
     font-weight: bold;
     padding: 6px;
     text-align: center;
+}
+/* ======== CUSTOMER CUSTOMER CUSTOMER ======== */
+.customer{
+    background-image: url(../imgs/bg1.jpg);
+    background-position: left top;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+    padding: 140px 0;
+}
+.customer:before {
+    content: "";
+    background: rgb(10 10 10 / 52%);
+    position: absolute;
+    top: 0;
+    min-height: 100%;
+    left: 0;
+    right: 0;
+    
+}
+.owl-carousel .owl-item img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot {
+    padding: 12px;
+    color: #fb811e;
+    display: inline-block;
+}
+.customer__post{
+    max-width: 900px;
+    margin: auto;
+    position: relative;
+}   
+
+.customer__content{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.customer__content h3{
+    font-weight: 600;
+    font-size: 20px;
+    margin: 10px 0 5px;
+    color: #fff
+}
+.customer__content p{    
+    color: #fff;
+    margin-bottom: 0px;
+    font-size: 16px
+}
+.customer__text p{
+    font-size: 22px;
+    line-height: 34px;
+    color: #fff;
+    text-indent: 30px;
+    display: block;
+}
+.customer__text span{
+    font-size: 20px;
+    color: #fb811e;
+    font-weight: 600;
+    display: inline-block
 }
