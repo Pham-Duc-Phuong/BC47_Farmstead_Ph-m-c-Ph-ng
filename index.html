@@ -44,13 +44,30 @@
       </div>
       <div class="header__right">
         <div class="header__right-icon d-flex align-items-center">
-        <button class="btn-ld" id="switchButton"><i class="bi bi-brightness-high"></i><i class="bi bi-moon"></i></button>
-        <nav class="navbar navbar-collapse-lg justify-content-between">
-          <button class="btn__collapse">
-            <span class="fa fa-bars"></span>
-          </button>
-        </nav>
-      </div>
+          <form class="d-flex align-items-center" action="">
+            <button id="btn-search"><i class="fa fa-search"></i></button>
+            <input type="search" name="s" placeholder="Search">
+          </form>
+          <button class="btn-ld" id="switchButton"><i class="bi bi-brightness-high"></i><i
+              class="bi bi-moon"></i></button>
+          <nav class="navbar  justify-content-between">
+            <button id="btn__collapse">
+              <span class="fa fa-bars"></span>
+            </button>
+          </nav>
+          <div id="header__nav" class="navcollapse">
+            <ul class="navigation">
+              <li><a class="nav-active" href="#">home</a></li>
+              <li><a href="#">about</a></li>
+              <li><a href="#">services</a></li>
+              <li><a href="#">blog posts</a></li>
+              <li><a href="#">landing page</a></li>
+              <li><a href="#">elements page</a></li>
+              <li><a href="#">404 page</a></li>
+              <li><a href="#">contact</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </header>
@@ -58,10 +75,10 @@
     <div class="postcarousel__left">
       <h1>Farm</h1>
       <div class="text1">
-      <h3>Welcome to Farmstead<br>where Natural Food is born!</h3>
-      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
-      </p>
-    </div>
+        <h3>Welcome to Farmstead<br>where Natural Food is born!</h3>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
+        </p>
+      </div>
       <button>learn more</button>
     </div>
     <div class="postcarousel__right">
@@ -472,9 +489,11 @@
           <div class="logo">
             <a class="navbar-brand py-0 m-0" href="#"><i class="fa fa-leaf" aria-hidden="true"></i>Farmstead</a>
           </div>
-          <p class="mt-4 mb-0">Duis imperdiet sapien tortor, vitae congue diam auctor vitae. Aliquam eget turpis ornare, euismod ligul
+          <p class="mt-4 mb-0">Duis imperdiet sapien tortor, vitae congue diam auctor vitae. Aliquam eget turpis ornare,
+            euismod ligul
             aeget, enenatis dui.</p>
-          <p class="mt-5 mb-0">© 2023 Farmstead. All Rights Reserved | WordPress Theme by<span><a class="W3Layouts" href="#"> W3Layouts.</a></span></p>
+          <p class="mt-5 mb-0">© 2023 Farmstead. All Rights Reserved | WordPress Theme by<span><a class="W3Layouts"
+                href="#"> W3Layouts.</a></span></p>
         </div>
         <div class="footer__post col-4">
           <h3>NEWSLETTER</h3>
@@ -537,6 +556,7 @@
     })
   </script>
   <script src="./js/dark.js"></script>
+  <script src="./js/navbar.js"></script>
 </body>
 
 </html>

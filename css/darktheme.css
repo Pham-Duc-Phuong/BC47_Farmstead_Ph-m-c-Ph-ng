@@ -17,6 +17,9 @@
 .dark h3 , .dark h4{
     color: white;
 }
+.dark .carousel__text p{
+    color: white;
+}
 .dark p , .dark .footer__left a{
     color: #b7b7b7
 }
@@ -25,4 +28,10 @@
 }
 .dark .blog__bg:hover{
     border: 1px solid rgba(255, 255, 255, 0.2);
+}
+.dark .navcollapse{
+    background-color: #222222;
+}
+.dark .navcollapse a{
+    color: white;
 }

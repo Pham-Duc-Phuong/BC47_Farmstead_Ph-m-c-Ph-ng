@@ -57,6 +57,12 @@ button:hover{
 .header__right .bi-brightness-high{
     display: none;
 }
+.header__right .bi{
+    transition: all 0.5s;
+}
+.header__right .bi:hover{
+    color: #fb811e;
+}
 /* ======= HEADER HEADER HEADER ======= */
 header{
     position: fixed;
@@ -93,9 +99,45 @@ header{
 .header__right i{
     font-size: 24px;
 }
-.btn__collapse span{
+#btn__collapse span{
     font-size: 29px;
 }
+.header__right form{
+    
+}
+.navcollapse{
+    position: absolute;
+    background-color: white;
+    text-align: center;
+    padding: 0 55px;
+    border-radius: 5px;
+    top: 60px;
+    right: 381px;
+    display: none;
+}
+.navcollapse li{
+    list-style: none;
+}
+.navcollapse a{
+    text-decoration: none;
+    color: #060606;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 7px;
+    display: block;
+    transition: all 0.5s;
+}
+.navcollapse .nav-active {
+    color: #fb811e;
+}
+.navcollapse a:hover{
+    color: #fb811e;
+}
+.shownav{
+    display: block;
+}
+
 .sticky{
     padding: 6px 0;
     background-color: white;
