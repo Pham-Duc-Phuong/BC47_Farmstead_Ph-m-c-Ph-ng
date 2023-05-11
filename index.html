@@ -23,69 +23,45 @@
   <!-- FANCY BOX -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
   <!-- OWL CAROUSEL -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css" integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
+    integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- MY CSS -->
   <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/darktheme.css">
 </head>
 
-<body>
+<body id="myBody">
   <!-- NAVBAR -->
 
   <header>
     <div class="header__content container d-flex justify-content-between">
-
       <div class="header__left">
         <a class="navbar-brand" href="#"><i class="fa fa-leaf" aria-hidden="true"></i>Farmstead</a>
       </div>
-      <div class="header__right d-flex align-items-center">
-        <button><i class="bi bi-brightness-high"></i></button>
-        <button><i class="bi bi-moon"></i></button>
+      <div class="header__right">
+        <div class="header__right-icon d-flex align-items-center">
+        <button class="btn-ld" id="switchButton"><i class="bi bi-brightness-high"></i><i class="bi bi-moon"></i></button>
         <nav class="navbar navbar-collapse-lg justify-content-between">
-          <button id="button_nohover" class="navbar-toggler" type="button" data-toggle="collapse"
-            data-target="#header__navbar" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
+          <button class="btn__collapse">
             <span class="fa fa-bars"></span>
           </button>
-          <div class="collapse navbar-collapse" id="header__navbar">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">about</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">blog posts</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">landing page</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">elements page</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">404 page</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">contact</a>
-              </li>
-            </ul>
-          </div>
         </nav>
       </div>
+      </div>
     </div>
-
   </header>
   <section class="postcarousel d-flex align-items-center container-fuild">
     <div class="postcarousel__left">
       <h1>Farm</h1>
+      <div class="text1">
       <h3>Welcome to Farmstead<br>where Natural Food is born!</h3>
       <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.
       </p>
+    </div>
       <button>learn more</button>
     </div>
     <div class="postcarousel__right">
@@ -388,23 +364,28 @@
           <h5>Strawberry</h5>
         </div>
         <div class="gallery__item col-3 px-0">
-          <img class="lightimg img-fluid" data-thumb="./imgs/g11.jpg" data-fancybox="gallery" src="./imgs/g11.jpg" alt="g11.jpg">
+          <img class="lightimg img-fluid" data-thumb="./imgs/g11.jpg" data-fancybox="gallery" src="./imgs/g11.jpg"
+            alt="g11.jpg">
           <h5>Our Farm</h5>
         </div>
         <div class="gallery__item col-3 px-0">
-          <img class="lightimg img-fluid" data-thumb="./imgs/g12.jpg" data-fancybox="gallery" src="./imgs/g12.jpg" alt="g12.jpg">
+          <img class="lightimg img-fluid" data-thumb="./imgs/g12.jpg" data-fancybox="gallery" src="./imgs/g12.jpg"
+            alt="g12.jpg">
           <h5>Fresh Apples</h5>
         </div>
         <div class="gallery__item col-3 px-0">
-          <img class="lightimg img-fluid" data-thumb="./imgs/g13.jpg" data-fancybox="gallery" src="./imgs/g13.jpg" alt="g13.jpg">
+          <img class="lightimg img-fluid" data-thumb="./imgs/g13.jpg" data-fancybox="gallery" src="./imgs/g13.jpg"
+            alt="g13.jpg">
           <h5>Awesome Fields</h5>
         </div>
         <div class="gallery__item col-3 px-0">
-          <img class="lightimg img-fluid" data-thumb="./imgs/g14.jpg" data-fancybox="gallery" src="./imgs/g14.jpg" alt="g14.jpg">
+          <img class="lightimg img-fluid" data-thumb="./imgs/g14.jpg" data-fancybox="gallery" src="./imgs/g14.jpg"
+            alt="g14.jpg">
           <h5>Fresh Grapes</h5>
         </div>
         <div class="gallery__item col-3 px-0">
-          <img class="lightimg img-fluid" data-thumb="./imgs/g15.jpg" data-fancybox="gallery" src="./imgs/g15.jpg" alt="g15.jpg">
+          <img class="lightimg img-fluid" data-thumb="./imgs/g15.jpg" data-fancybox="gallery" src="./imgs/g15.jpg"
+            alt="g15.jpg">
           <h5>Hot Papper</h5>
         </div>
       </div>
@@ -477,12 +458,66 @@
       </div>
     </div>
   </section>
+  <footer>
+    <div class="container my-5 py-4">
+      <div class="row align-items-center">
+        <div class="footer__post footer__left pl-5 col-4">
+          <h3>FIND US</h3>
+          <p>Address: 10001 Alleghany st, 5th Avenue, 235 Terry, London.</p>
+          <p><a href="tel:+12 23456790">Phone: +12 23456790</a></p>
+          <p><a href="mailto:info@example.com">Email: info@example.com</a></p>
+          <p><a href="tel:+ 11 367 21890">Fax: + 11 367 21890</a></p>
+        </div>
+        <div class="footer__post footer__middle col-4">
+          <div class="logo">
+            <a class="navbar-brand py-0 m-0" href="#"><i class="fa fa-leaf" aria-hidden="true"></i>Farmstead</a>
+          </div>
+          <p class="mt-4 mb-0">Duis imperdiet sapien tortor, vitae congue diam auctor vitae. Aliquam eget turpis ornare, euismod ligul
+            aeget, enenatis dui.</p>
+          <p class="mt-5 mb-0">© 2023 Farmstead. All Rights Reserved | WordPress Theme by<span><a class="W3Layouts" href="#"> W3Layouts.</a></span></p>
+        </div>
+        <div class="footer__post col-4">
+          <h3>NEWSLETTER</h3>
+          <p>Subscribe to our mailing list and get updates to your email inbox.</p>
+          <form class="d-flex" action="">
+            <input type="text" placeholder="Email Address">
+            <button><span class="fa fa-paper-plane" aria-hidden="true"></span></button>
+          </form>
+          <div class="footer__social d-flex align-items-center pt-2 mt-4">
+            <div class="social__bg max-width">
+              <div class="social__right">
+                <a href="#">
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-google-plus-g"></i>
+                </a>
+                <a href="#">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
   <!-- BS4 JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js" integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+    integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
     integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
     crossorigin="anonymous"></script>
@@ -491,14 +526,17 @@
   <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
   <!-- OWL CAROUSEL -->
   <script src="./js/owl.carousel.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script>
     $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    items:1,
-})
+      loop: true,
+      margin: 10,
+      items: 1,
+    })
   </script>
+  <script src="./js/dark.js"></script>
 </body>
 
 </html>

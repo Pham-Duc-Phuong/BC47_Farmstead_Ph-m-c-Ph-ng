@@ -7,7 +7,6 @@
 html,
 body {
     font-family: 'Source Sans Pro', sans-serif;
-    margin-bottom: 1000px;
 }
 h1 , h2 , h3 , h4 , h5 , h6{
     font-family: 'Volkhov', serif;
@@ -54,6 +53,11 @@ button:hover{
     font-size: 17px;
     color: #707070;
 }
+/* DARK */
+.header__right .bi-brightness-high{
+    display: none;
+}
+/* ======= HEADER HEADER HEADER ======= */
 header{
     position: fixed;
     top:0px;
@@ -82,13 +86,21 @@ header{
 .header__right i{
     font-size: 20px;
 }
-
 .header__right button{
     background-color: transparent;
+    padding: 0px;
+}
+.header__right i{
+    font-size: 24px;
+}
+.btn__collapse span{
+    font-size: 29px;
 }
 .sticky{
     padding: 6px 0;
     background-color: white;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
+    z-index: 9999;
 }
 .sticky .header__left a{
     color: #060606;
@@ -115,11 +127,15 @@ header{
     color: #f4f4f4;
     position: absolute;
     font-weight: 700;
-    z-index: -1;
+    z-index: 0;
     top: -86px;
     left: -60px;
 }
-.postcarousel .postcarousel__left h3{
+.postcarousel__left .text1{
+    position: relative;
+    z-index: 999;
+}
+.postcarousel__left h3{
     font-size: 50px;
     color: black;
     font-weight: 700;
@@ -499,4 +515,85 @@ header{
     color: #fb811e;
     font-weight: 600;
     display: inline-block
+}
+.footer__post h3{
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.footer__post p{
+    line-height: 24px;
+    font-size: 17px;
+}
+.footer__post a{
+    text-decoration: none;
+    color: #707070;
+}
+.footer__middle p{
+    font-size: 17px;
+    line-height: 27px;
+}
+.footer__middle a{
+    color: #009f4d;
+}
+.footer__post .logo a{
+    color: #fb811e;
+    font-size: 32px;
+    position: relative;
+    font-family:'Volkhov', serif;
+    line-height: 0;
+    transition: all 0.5s;
+}
+.footer__post .logo i{
+    position: absolute;
+    top: -25px;
+    left: 50px;
+    font-size: 20px;
+}
+.footer__post .logo:hover a{
+    color: #060606;
+}
+footer .container{
+    padding: 0 15px;
+}
+.footer__post form{
+    flex: 1 1 auto;
+}
+.footer__post input{
+    background-color: #f4f4f4;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    outline: none;
+    width: 80%;
+    color: #707070;
+    border: 1px solid #eee;
+    border-radius: 30px 0px 0px 30px
+}
+.footer__post button{
+    border-radius: 0 30px 30px 0;
+    background-color: #009f4d;
+}
+.footer__post button:hover{
+    opacity: 0.8;
+}
+.footer__social i{
+    display: inline-block;
+    margin-right: 5px;   
+    color: #009f4d;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    background: rgb(10 191 83 / 8%);
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    transition: all 0.5s;
+    font-size: 15px;
+}
+.footer__social i:hover{
+    color: #fb811e;
+    background: rgb(255 201 69 / 19%);
+    box-shadow: 0px 4px 7px 0px rgb(10 10 10 / 24%)
 }

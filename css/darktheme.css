@@ -1,0 +1,28 @@
+.dark{
+    background-color: #222222;
+}
+.dark .header__right .bi-brightness-high {
+    display: block;
+}
+
+.dark .bi-moon {
+    display: none;
+}
+.dark .sticky {
+    background-color: #222222;
+}
+.dark .postcarousel__left h1{
+    color: #0b0d0e;
+}
+.dark h3 , .dark h4{
+    color: white;
+}
+.dark p , .dark .footer__left a{
+    color: #b7b7b7
+}
+.dark .customer p{
+    color: #fff;
+}
+.dark .blog__bg:hover{
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
