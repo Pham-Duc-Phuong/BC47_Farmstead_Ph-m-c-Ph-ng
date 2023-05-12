@@ -35,3 +35,9 @@
 .dark .navcollapse a{
     color: white;
 }
+.dark .navcollapse .nav-active {
+    color: #fb811e;
+}
+.dark .navcollapse a:hover {
+    color: #fb811e;
+}

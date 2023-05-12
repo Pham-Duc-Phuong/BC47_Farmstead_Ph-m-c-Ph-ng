@@ -1,0 +1,10 @@
+.postcarousel{
+    background-image: url(../imgs/b4.jpg);
+    height: 31.3vh;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: 56.56%;
+}
+.postcarousel__left{
+    margin-left: 0;
+}

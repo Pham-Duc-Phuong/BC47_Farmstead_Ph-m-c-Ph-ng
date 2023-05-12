@@ -118,7 +118,8 @@ header{
     border: 0px solid #eee;
     width: 0;
 }
-.header__right .header__right-icon .showinput{
+/* SEARCH */
+.header__right .showinput{
     padding: 5.5px;
     border-radius: 0 30px 30px 0;
     border: 1px solid #eee;
