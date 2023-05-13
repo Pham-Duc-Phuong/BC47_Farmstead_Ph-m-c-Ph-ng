@@ -11,6 +11,15 @@
 .dark .sticky {
     background-color: #222222;
 }
+.dark .sticky a{
+    color: #ffffff;
+}
+.dark .sticky #btn__collapse span{
+    color: white;
+}
+.dark .sticky .btn-ld .bi{
+    color: #fff;
+} 
 .dark .postcarousel__left h1{
     color: #0b0d0e;
 }
