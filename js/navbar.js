@@ -1,7 +1,7 @@
-var btnsearch = document.getElementById("btnsearch")
-btnsearch.onclick = function () {
-    document.getElementById("inputsearch").classList.add("showinput");
-};
+// var btnsearch = document.getElementById("btnsearch")
+// btnsearch.onclick = function () {
+//     document.getElementById("inputsearch").classList.add("showinput");
+// };
 btnsearch.onclick = function () {
     btnsearch.classList.toggle("formicon");
 };

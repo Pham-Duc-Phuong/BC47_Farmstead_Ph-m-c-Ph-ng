@@ -58,7 +58,7 @@ button:hover{
     display: none;
 }
 .header__right .bi{
-    transition: all 0.5s;
+    transition: all 0.5s linear;
 }
 .header__right .bi:hover{
     color: #fb811e;

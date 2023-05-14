@@ -1,10 +1,35 @@
-.postcarousel{
+.postcarousel__right{
     background-image: url(../imgs/b4.jpg);
-    height: 31.3vh;
+    height: 301px;
     background-position: bottom right;
     background-repeat: no-repeat;
-    background-size: 56.56%;
+    background-size: 100%;
+    width: 133%;
+    max-width: 100%;
+    border-radius: 0 0 0 8px;
+}
+h1 , h2 , h3 , h4 , h5 , h6 {
+    line-height: 28px;
+}
+p{
+    margin-bottom: 0;
 }
 .postcarousel__left{
     margin-left: 0;
+    margin-top: 65px;
+}
+.postcarousel__left h4{
+    font-weight: 700;
+    font-size: 24px;
+}
+.postcarousel__left a{
+    text-decoration: none;
+    font-weight: bolder;
+    color: #707070;
+}
+.postcarousel__left p{
+    font-size: 15px;
+    line-height: 1.5;
+    vertical-align: middle;
+    margin-top: 11px;
 }
