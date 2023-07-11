@@ -1,12 +1,14 @@
+
 .postcarousel__right{
     background-image: url(../imgs/b4.jpg);
-    height: 301px;
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 133%;
-    max-width: 100%;
     border-radius: 0 0 0 8px;
+    width: 70%;
+    max-width: 100%;
+    transform: translateX(33.95%);
+    height: 300px;
 }
 h1 , h2 , h3 , h4 , h5 , h6 {
     line-height: 28px;
@@ -17,6 +19,7 @@ p{
 .postcarousel__left{
     margin-left: 0;
     margin-top: 65px;
+    width: 30%;
 }
 .postcarousel__left h4{
     font-weight: 700;
